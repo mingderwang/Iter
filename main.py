@@ -24,3 +24,10 @@ while True:
   except StopIteration:
     print('Program complete')
     break
+
+print()
+print('-------- try filter -------')
+sg = iter(student_grades)
+result = filter(lambda x: x >= 52, sg) 
+print(list(result))
+print('These students are passed.')
